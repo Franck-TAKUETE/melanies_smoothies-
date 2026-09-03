@@ -10,7 +10,7 @@ name_on_order = st.text_input('Name on Smoothie')
 st.write('The name on your Smoothie will be', name_on_order)
 
 cnx = st.connection("snowflake")
-session = cnxsession()
+session = cnx.session()
 
 #st.write("Role :", session.get_current_role())
 #st.write("Database :", session.get_current_database())
